@@ -31,6 +31,9 @@ def _init():
 _libraries = {}
 _libraries['magic'] = _init()
 
+# Using glib methods
+method1(_libraries)
+
 # Flag constants for open and setflags
 MAGIC_NONE = NONE = 0
 MAGIC_DEBUG = DEBUG = 1
