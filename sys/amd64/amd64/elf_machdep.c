@@ -43,16 +43,19 @@
 #include <vm/pmap.h>
 #include <vm/vm_param.h>
 
+#include "amd64-wow.h"
+
 #include <machine/elf.h>
 #include <machine/fpu.h>
 #include <machine/md_var.h>
 
 #include "vdso_offsets.h"
 
+extern const char _binary_elf_vdso_so_1_write[];
 extern const char _binary_elf_vdso_so_1_start[];
 extern const char _binary_elf_vdso_so_1_end[];
 extern char _binary_elf_vdso_so_1_size;
-
+extern char _binary_elf_vdso_so_0_write;
 struct sysentvec elf64_freebsd_sysvec_la48 = {
 	.sv_size	= SYS_MAXSYSCALL,
 	.sv_table	= sysent,
@@ -95,6 +98,10 @@ struct sysentvec elf64_freebsd_sysvec_la48 = {
 	.sv_regset_begin = SET_BEGIN(__elfN(regset)),
 	.sv_regset_end  = SET_LIMIT(__elfN(regset)),
 };
+
+struct vvram elf64_freebsd_syscex_la57 = {
+        .sv_get_byte        = 
+}
 
 struct sysentvec elf64_freebsd_sysvec_la57 = {
 	.sv_size	= SYS_MAXSYSCALL,
