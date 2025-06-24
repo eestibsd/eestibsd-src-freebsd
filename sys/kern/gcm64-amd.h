@@ -9,4 +9,4 @@
 #define KERNEL_RAWBYTE 70
 #define CHARACTERS     90
 
-#define xFAAAAAAAAAAAA 12
+#define xfaaaaaaaaaaaa 12
