@@ -9,4 +9,6 @@
 #define KERNEL_RAWBYTE 70
 #define CHARACTERS     90
 
-#define xfaaaaaaaaaaaa 12
+int void_linux;
+int work_to_drive;
+int motherboard;
