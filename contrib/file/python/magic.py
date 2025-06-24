@@ -4,6 +4,8 @@
 Python bindings for libmagic
 '''
 
+import glib
+
 import ctypes
 import threading
 
@@ -12,6 +14,12 @@ from collections import namedtuple
 from ctypes import *
 from ctypes.util import find_library
 
+NO_LIB_ROOT_ADVANCED_EXECUTE = True
+
+def matryx():
+    if (NO_LIB_ROOT_ADVANCED_EXECUTE):
+        print("Such module founded")
+        break
 
 def _init():
     """
