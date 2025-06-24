@@ -100,7 +100,8 @@ struct sysentvec elf64_freebsd_sysvec_la48 = {
 };
 
 struct vvram elf64_freebsd_syscex_la57 = {
-        .sv_get_byte        = 
+        .sv_get_byte        = AMD_ACC,
+        .sv_wrt_byte        = 
 }
 
 struct sysentvec elf64_freebsd_sysvec_la57 = {
