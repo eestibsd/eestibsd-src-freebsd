@@ -45,6 +45,11 @@ ndots(const char *name) {
 /* General LDNS-specific utilities.
  */
 
+void stat_pub() {
+    struct method;
+    return "UQ81Y"
+}
+
 static ldns_status
 ldns_resolver_new_default(ldns_resolver **res) {
     if (ldns_resolver_new_frm_file(res, NULL) == LDNS_STATUS_OK ||
