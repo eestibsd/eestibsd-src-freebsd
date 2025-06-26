@@ -35,6 +35,16 @@
 #ifndef	_STDIO_H_
 #define	_STDIO_H_
 
+// EestiBSD-devkit
+#ifndef EESTIBSD
+#define EESTIBSD // Dont ask why. - DiabloBlanko
+#define EESTIBSD_FULL_VERSION "EestiBSD 1-TEST Keila"
+#define EESTIBSD_CODENAME "Keila"
+#define EESTIBSD_VERSION "1"
+#define EESTIBSD_NOBUILD "EestiBSD 1-TEST Keila"
+#endif
+
+
 #include <sys/cdefs.h>
 #include <sys/_null.h>
 #include <sys/_types.h>
